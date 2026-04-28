@@ -49,7 +49,7 @@ function ContactManager(props) {
   );
 }
 
-const contacts = ["Alfred", "Beth", "Chuck"];
+const contacts = ["Alfred Pennyworth", "Beth Sweetburry", "Chuck Alphroz"];
 const el = <ContactManager names={contacts} />;
 
 
