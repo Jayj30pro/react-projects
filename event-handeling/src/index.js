@@ -28,7 +28,7 @@ function MathForm() {
       e.preventDefault();
     }
     else {
-      alert("no multiplying by zero");
+      alert("no number entered");
     }
     
   }
