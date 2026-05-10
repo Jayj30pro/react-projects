@@ -6,6 +6,9 @@ import Projects from "./pages/Projects";
 import ProjectDetails from "./pages/ProjectDetails";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import Dashboard from "./pages/Dashboard";
+import Profile from "./pages/Profile";
+import Settings from "./pages/Settings";
 
 export default function App() {
   return (
@@ -16,6 +19,13 @@ export default function App() {
         <Route path="projects" element={<Projects />} />
         <Route path="projects/:projectId" element={<ProjectDetails />} />
         <Route path="contact" element={<Contact />} />
+
+        <Route path="dashboard" element={<Dashboard />}>
+          <Route index element={<p>Choose Profile or Settings.</p>} />
+          <Route path="profile" element={<Profile />} />
+          <Route path="settings" element={<Settings />} />
+        </Route>
+
         <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>

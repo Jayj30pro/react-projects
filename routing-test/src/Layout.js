@@ -1,21 +1,24 @@
 import { NavLink, Outlet } from "react-router-dom";
 
 export default function Layout() {
-  return (
-    <div style={{ padding: "20px", fontFamily: "Arial, sans-serif" }}>
-      <header>
-        <h1>Routing Test</h1>
-        <nav style={{ display: "flex", gap: "12px", marginBottom: "20px" }}>
-          <NavLink to="/">Home</NavLink>
-          <NavLink to="/about">About</NavLink>
-          <NavLink to="/projects">Projects</NavLink>
-          <NavLink to="/contact">Contact</NavLink>
-        </nav>
-      </header>
+  const navStyle = ({ isActive }) => ({
+    fontWeight: isActive ? "bold" : "normal",
+    color: isActive ? "red" : "black",
+    textDecoration: "none",
+  });
 
-      <main>
-        <Outlet />
-      </main>
+  return (
+    <div style={{ padding: "20px" }}>
+      <h1>Router Lab</h1>
+
+      <nav style={{ display: "flex", gap: "12px", marginBottom: "20px" }}>
+        <NavLink to="/" style={navStyle}>Home</NavLink>
+        <NavLink to="/about" style={navStyle}>About</NavLink>
+        <NavLink to="/projects" style={navStyle}>Projects</NavLink>
+        <NavLink to="/contact" style={navStyle}>Contact</NavLink>
+      </nav>
+
+      <Outlet />
     </div>
   );
 }
