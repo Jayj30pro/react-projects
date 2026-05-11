@@ -10,6 +10,8 @@ import Dashboard from "./pages/Dashboard";
 import Profile from "./pages/Profile";
 import Settings from "./pages/Settings";
 import SearchCenter from "./pages/SearchCenter";
+import GamesPage from "./pages/GamesPage";
+import GameDetails from "./data/GameDetails";
 
 export default function App() {
   return (
@@ -17,6 +19,8 @@ export default function App() {
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
         <Route path="about" element={<About />} />
+        <Route path="games" element={<GamesPage />} />
+        <Route path="games/:gameId" element={<GameDetails />} />
         <Route path="projects" element={<Projects />} />
         <Route path="projects/:projectId" element={<ProjectDetails />} />
         <Route path="contact" element={<Contact />} />
