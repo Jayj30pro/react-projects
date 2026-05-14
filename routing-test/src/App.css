@@ -1,3 +1,12 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url(./ChatGPT\ Image\ Mar\ 15\,\ 2026\,\ 05_34_22\ PM.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
 .App {
   text-align: center;
 }
