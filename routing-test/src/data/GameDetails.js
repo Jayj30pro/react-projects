@@ -14,6 +14,7 @@ export default function GameDetails() {
   return (
     <div>
       <h2>{game.name}</h2>
+      <p>game image here</p>
       <p>Genre: {game.genre}</p>
       <p>Status: {game.status}</p>
       <button onClick={() => navigate("/games")}>Back to games</button>
