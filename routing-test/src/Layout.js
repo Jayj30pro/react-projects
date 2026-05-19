@@ -9,7 +9,7 @@ export default function Layout() {
 
   return (
     <div style={{ padding: "20px" }}>
-      <h1>Router Test Lab</h1>
+      <h1>Router Test Lab 1</h1>
 
       <nav style={{ display: "flex", gap: "12px", marginBottom: "20px" }}>
         <NavLink to="/" style={navStyle}>Home</NavLink>

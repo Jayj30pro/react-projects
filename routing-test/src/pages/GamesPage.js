@@ -5,8 +5,6 @@ import "../App.css";
 
 export default function GamesPage(){
 
-
-
     return (
         <div className="games-page">
             <h2>Games Page</h2>
