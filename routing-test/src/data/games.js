@@ -30,6 +30,12 @@ const games = [
     status: "Future",
   },
   {
+    id: "ice-man",
+    name: "Ice Man",
+    genre: "Adventure",
+    status: "Future",
+  },
+  {
     id: "brain-journey",
     name: "Brain-Journey",
     genre: "RPG",
