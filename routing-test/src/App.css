@@ -54,6 +54,17 @@ body {
   text-align: center;
 }
 
+.home-message{
+  font-size: 50px;
+  font-weight: bolder;
+  color: #f80;
+  text-shadow:  
+    -2px -2px 0 #000,  
+     2px -2px 0 #000,
+    -2px  2px 0 #000,
+     2px  2px 0 #000;
+}
+
 .games-page {
   padding: 20px;
 }

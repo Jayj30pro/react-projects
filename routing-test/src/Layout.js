@@ -2,8 +2,9 @@ import { NavLink, Outlet } from "react-router-dom";
 
 export default function Layout() {
   const navStyle = ({ isActive }) => ({
-    fontWeight: isActive ? "bold" : "normal",
-    color: isActive ? "#0C0" : "#FFF",
+    fontWeight: isActive ? "bolder" : "normal",
+    color: isActive ? "#F80" : "#FFF",
+    fontSize: isActive ? "30px" : "20px",
     textDecoration: "none",
   });
 
