@@ -3,7 +3,7 @@ body {
   height: 100vh;
   width: 100vw;
   font-family: Arial, sans-serif;
-  background: url(./cold-flare-detailed.png);
+  background: url(./images/cold-flare-detailed.png);
   background-repeat: repeat-y;
   background-size: 100% 100%;
   color: white;
@@ -100,4 +100,12 @@ body {
 
 .game-link:hover {
   text-decoration: underline;
+}
+
+.game-card-image {
+  height: 100px;
+}
+
+.game-detail-image {
+  height: 300px;
 }
