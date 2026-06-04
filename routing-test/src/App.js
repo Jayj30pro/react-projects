@@ -12,6 +12,7 @@ import Settings from "./pages/Settings";
 import SearchCenter from "./pages/SearchCenter";
 import GamesPage from "./pages/GamesPage";
 import GameDetails from "./data/GameDetails";
+import Arcade from "./pages/Arcade";
 
 export default function App() {
   return (
@@ -25,6 +26,7 @@ export default function App() {
         <Route path="projects/:projectId" element={<ProjectDetails />} />
         <Route path="contact" element={<Contact />} />
         <Route path="search" element={<SearchCenter />} />
+        <Route path="arcade" element={<Arcade />}></Route>
         <Route path="dashboard" element={<Dashboard />}>
           <Route index element={<p>Choose Profile or Settings.</p>} />
           <Route path="profile" element={<Profile />} />

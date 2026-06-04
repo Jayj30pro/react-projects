@@ -1,0 +1,16 @@
+.coin-game {
+  text-align: center;
+}
+
+.frame {
+  width: 70%;
+  border: 1px solid #000;
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+
+.controls button {
+  width: 50px;
+  height: 30px;
+  margin: 4px;
+}
