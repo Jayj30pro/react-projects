@@ -1,9 +1,11 @@
-import CoinCollector from '../html-games/CoinCollector';
+import { Link, Outlet, OUtlet} from "react-router-dom";
 
 export default function Arcade() {
   return (
     <div>
-      <CoinCollector />
+        <h1>Arcade</h1>
+        <Link to="arcade/coincollector">Coin Collector</Link>
+        <Outlet />
     </div>
   );
 }
