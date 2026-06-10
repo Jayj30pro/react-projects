@@ -4,7 +4,7 @@ export default function Arcade() {
   return (
     <div>
         <h1>Arcade</h1>
-        <Link to="arcade/coincollector">Coin Collector</Link>
+        <Link to="coincollector">Coin Collector</Link>
         <Outlet />
     </div>
   );

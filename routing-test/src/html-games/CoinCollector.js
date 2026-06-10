@@ -52,10 +52,10 @@ export default function CoinCollector() {
       screen.clearRect(0, 0, 300, 200);
 
       screen.beginPath();
-      screen.font = '20px Times';
-      screen.fillStyle = '#FFF';
-      screen.fillText('Score: ' + currentScore, 15, 20);
-
+      screen.rect(0, 0, 300, 200);
+      screen.fillStyle = '#fff';
+      screen.fill();
+    
       screen.beginPath();
       screen.rect(x, y, 50, 50);
       screen.fillStyle = '#064';
@@ -65,6 +65,11 @@ export default function CoinCollector() {
       screen.rect(coinx, coiny, 25, 25);
       screen.fillStyle = '#CF7';
       screen.fill();
+
+      screen.beginPath();
+      screen.font = '20px Times';
+      screen.fillStyle = '#000';
+      screen.fillText('Score: ' + currentScore, 15, 20);
 
       if (directionRef.current === 1) {
         if (x < 250) x += speed * timeLapsed;
@@ -105,8 +110,8 @@ export default function CoinCollector() {
 
   return (
     <div className="coin-game">
-      <h2>Coin Collector</h2>
-      <p>Score: {score}</p>
+      {/* <h2>Coin Collector</h2>
+      <p>Score: {score}</p> */}
 
       <canvas
         ref={canvasRef}
