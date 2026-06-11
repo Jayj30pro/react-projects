@@ -14,6 +14,7 @@ import GamesPage from "./pages/GamesPage";
 import GameDetails from "./data/GameDetails";
 import Arcade from "./pages/Arcade";
 import CoinCollector from "./html-games/CoinCollector";
+import RockPaperScissors from "./html-games/RockPaperScissors";
 
 export default function App() {
   return (
@@ -29,6 +30,7 @@ export default function App() {
         <Route path="search" element={<SearchCenter />} />
         <Route path="arcade" element={<Arcade />} />
         <Route path="arcade/coincollector" element={<CoinCollector />} />
+        <Route path="arcade/rockpaperscissors" element={<RockPaperScissors />} />
         <Route path="dashboard" element={<Dashboard />}>
           <Route index element={<p>Choose Profile or Settings.</p>} />
           <Route path="profile" element={<Profile />} />

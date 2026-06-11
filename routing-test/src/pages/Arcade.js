@@ -5,6 +5,8 @@ export default function Arcade() {
     <div>
         <h1>Arcade</h1>
         <Link to="coincollector">Coin Collector</Link>
+        <br/>
+        <Link to="rockpaperscissors">Rock Paper Scissors</Link>
         <Outlet />
     </div>
   );
