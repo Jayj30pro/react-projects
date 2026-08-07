@@ -20,6 +20,7 @@ export default function Layout() {
         <NavLink to="/contact" style={navStyle}>Contact</NavLink>
         <NavLink to="/search" style={navStyle}>Search</NavLink>
         <NavLink to="/arcade" style={navStyle}>Arcade</NavLink>
+        <NavLink to="/dashboard" style={navStyle}>Dashboard</NavLink>
       </nav>
 
       <Outlet />
